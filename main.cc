@@ -26,7 +26,7 @@ ttmath::Int<kBigIntSize> compute(ttmath::Int<kBigIntSize> x,
   // params are fixed.
   x = x % p;
 
-  // Should not happen given the nature of DH.
+  // Again, hould not happen given the nature of DH fixed params.
   if (x == 0)
     return 0;
 
