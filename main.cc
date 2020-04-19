@@ -74,7 +74,7 @@ int main() {
   ttmath::Int<2> bob_priv = AskKernelForRandom();
   ttmath::Int<kBigIntSize> bob_pub = compute(g, bob_priv, p);
 
-  // Pretend there's a network transfer of the private keys.
+  // Pretend there's a network transfer of the public keys.
   ttmath::Int<kBigIntSize> alices_secret_key = compute(bob_pub, alice_priv, p);
   ttmath::Int<kBigIntSize> bobs_secret_key = compute(alice_pub, bob_priv, p);
 
