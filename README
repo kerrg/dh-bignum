@@ -1,0 +1,6 @@
+While self studying crypto, I noticed almost all the Diffie Hellman examples
+use fixed, extremely small parameters. This is a shame because with a good
+BigNum library and knowledge of fast exponentation, a student can easily use
+real parameters.
+
+This is just a quick and dirty proof of concept.
